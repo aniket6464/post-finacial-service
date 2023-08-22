@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my applied scheme</title>
+
+    <!-- linking style sheet to html file -->
+    <link rel="stylesheet" href="index.css">
+    <!-- for icons (https://fontawesome.com/)-->
+    <link rel="stylesheet" href="D:\coding\post financial service\fontawesome-free-6.4.0-web\fontawesome-free-6.4.0-web\css\all.css">
+    
+</head>
+<body>
+    <!--container for  img -->
+    <div class="container">
+        <div><img src="post_office.png" alt="Post Office"></div> 
+        <div><img src="Satyamev Jayate.png" alt="Satyamev Jayate" style="margin-left: 700px;"></div>
+    </div>
+    
+    <!-- nav bar  -->
+    <nav>
+        <h1>welcome,aniket</h1> 
+        <input type="text" placeholder="Search"> <button>Search</button>
+
+        <!-- dropdown for profile and change password  -->
+        <div class="dropdown" >
+            <i class="fa-solid fa-circle-user dropbtn" style="font-size:30px;" onclick="myFunction()"></i> 
+            <div class="dropdown-content" id="myDropdown">
+            <a href="profile.html" class="drop">profile</a> 
+            <a href="changePassword.html" class="drop">change password</a>
+            <a href="#" class="drop">log out</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="padding: 0;">
+        <!--for side bar  -->
+        <div class="sidebar">
+            <a href="index.html" class="item1">Home</a>
+            <a href="allscheme.html" class="item1">All scheme</a>
+            <a href="myappliedscheme.html" class="item1" style="background-color: rgb(38, 36, 36);box-shadow: 1px 1px 20px rgb(44, 13, 13); font-size: 20px;font-style: italic; color: white;">My applied scheme</a>
+            <a href="agentlist.html" class="item1">agent list</a>
+            <a href="payment.html" class="item1">Payment</a>
+            <a href="chats.html" class="item1">chats</a>
+            <a href="appliedhistory.html" class="item1">Applied history</a>
+            <a href="complaint.html" class="item1">Complaint</a>
+        </div>
+
+        <!--for content  -->
+        <div class="content">
+            <h3>My Applied  schemes</h3>
+            <table>
+                <tr>
+                    <th>Application id</th>
+                    <th>Scheme name</th>
+                    <th>Status</th>
+                    <th>agent name</th>
+                    <th>Take Action</th>
+                </tr>
+        
+                <tr>
+                    <td>i1</td>
+                    <td>n1</td>
+                    <td>s1</td>
+                    <td>t1</td>
+                    <td><a href="">change agent</a> &nbsp; | &nbsp;
+                        <a href="">cancel</a></td>
+                </tr>
+            </table>
+        </div>
+    </div><hr>
+    
+    <!-- footer  -->
+    <div class="footer">
+        <p>
+            <i class="fa-brands fa-facebook" style="font-size:20px; color: #0165E1;"></i><i class="fa-brands fa-youtube" style="font-size:20px; color: #df4343;"></i><i class="fa-brands fa-instagram" style="font-size:20px; color: #C13584;"></i>
+        </p>
+        &copy; 2021 copyrights. &nbsp;<a href="">terms & condition </a>&nbsp;|&nbsp; <a href="" style="margin-right: 15px;">FAQ</a> 
+    </div>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
+</body>
+</html>
