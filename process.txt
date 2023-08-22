@@ -1,0 +1,17 @@
+customer sign up
+customer log in 
+to home screen apply and insert into customers
+to my applied scheme fetch from customers
+to agent list name of all agent agents and select customers,agentr
+to payment fetch info from customers and make pay part  customers
+to applied history fetch info from customers
+to complaint insert into customerc
+
+agent sign up
+agent log in 
+to home screen custo request fetch from agentr 
+to all scheme acquire scheme insert into agents
+to my scheme fetch from agents update
+to my customer fetch from agentc 
+to pay fetch from customers
+to cust histo fetch from customers

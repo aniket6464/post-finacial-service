@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <!-- linking style sheet to html file -->
+    <link rel="stylesheet" href="D:\coding\post financial service\fontawesome-free-6.4.0-web\fontawesome-free-6.4.0-web\css\all.css">
+    
+    <!-- for icons (https://fontawesome.com/)-->
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <!-- nav bar  -->
+    <nav>
+        <h1 style="padding-left: 10px; color: rgb(0, 0, 0);margin-left: 10px;margin-right: 190px;">welcome,aniket </h1> 
+        <input type="text" placeholder="Search"> <button>Search</button>
+
+        <!-- dropdown for profile and change password  -->
+        <div class="dropdown">
+            <i class="fa-solid fa-circle-user dropbtn" style="font-size:30px;" onclick="myFunction()"></i> 
+            <div class="dropdown-content" id="myDropdown">
+            <a href="profile.html" class="drop">profile</a> 
+            <a href="changePassword.html" class="drop">change password</a>
+            <a href="#" class="drop">log out</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="padding: 0;">
+        <!--for side bar  -->
+        <div class="sidebar">
+            <a href="agent_index.html" class="item1">Home</a>
+            <a href="agent_allscheme.html" class="item1">All scheme</a>
+            <a href="agent_myscheme.html" class="item1">My scheme</a>
+            <a href="agent_mycustomer.html" class="item1">My customer</a>
+            <a href="agent_chats.html" class="item1">chats</a>
+            <a href="agent_payment.html" class="item1">payment</a>
+            <a href="agent_customerhistory.html" class="item1">Customer History</a>
+        </div> 
+
+        <!--for content  -->
+        <div class="content">
+
+            <!-- content2 for border -->
+            <div class="content2">
+                <h1 class="center">My Profile </h1>
+
+                <!-- container1 for img and profile table  -->
+                <div class="container1">
+
+                    <div class="img">
+                        <i class="fa-solid fa-user" style="font-size:200px"></i>  
+                        <h1 style="margin-left: 20px;">aniket samudre</h1>
+                        <p style="text-align: center; width: 250px;border: 1px solid rgb(255, 255, 255);margin: 10px;">aniketsamudre7764@gmail.com</p>
+                    </div>
+
+                    <!-- content1 for profile table  -->
+                    <div class="content1">
+                        <table>
+                            <tr>
+                                <th>name</th>
+                                <td>aniket samudre</td>
+                            </tr>
+            
+                            <tr>
+                                <th>Address</th>
+                                <td>krushnakamal hociety</td>
+                            </tr>
+            
+                            <tr>
+                                <th>city</th>
+                                <td>dhule</td>
+                            </tr>
+            
+                            <tr>
+                                <th>state</th>
+                                <td>maharashtra</td>
+                            </tr>
+            
+                            <tr>
+                                <th>prefession</th>
+                                <td>student</td>
+                            </tr>
+            
+                            <tr>
+                                <th>post office</th>
+                                <td>dhule</td>
+                            </tr>
+            
+                            <tr>
+                                <th>age</th>
+                                <td>20</td>
+                            </tr>
+            
+                            <tr>
+                                <th>mobile no </th>
+                                <td>7841877764</td>
+                            </tr>
+            
+                            <tr>
+                                <th>email </th>
+                                <td style="text-transform: lowercase;">aniketsamudre7764@gmail.com</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <button style="margin-left: 450px;">Edit</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
+</body>
+</html>
